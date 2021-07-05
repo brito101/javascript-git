@@ -21,7 +21,8 @@
     border: 10px solid var(--font-color-subtitle);
     box-shadow: 0 0 0 10px var(--background); 
     position: relative;
-    min-width: 300px;
+    width: 300px;
+    max-width: calc(80% - 80px);
 }
 
 @keyframes modal {
