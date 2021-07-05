@@ -30,7 +30,6 @@ const modal = new Modal(
 );
 modal.init();
 
-tabNav();
 animationScroll();
 tooltip();
 dropdownMenu();
