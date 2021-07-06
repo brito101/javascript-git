@@ -2,9 +2,9 @@ import SmoothScroll from "./modules/smooth-scroll.js";
 import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tab-nav.js";
 import Modal from "./modules/modal.js";
+import Tooltip from "./modules/tooltip.js";
 
 import animationScroll from "./modules/animation-scroll.js";
-import tooltip from "./modules/tooltip.js";
 import dropdownMenu from "./modules/dropdown-menu.js";
 import menuMobile from "./modules/menu-mobile.js";
 import openingHours from "./modules/opening-hours.js";
@@ -30,8 +30,10 @@ const modal = new Modal(
 );
 modal.init();
 
+const tooltip = new Tooltip("[data-tooltip]");
+tooltip.init();
+
 animationScroll();
-tooltip();
 dropdownMenu();
 menuMobile();
 openingHours();
