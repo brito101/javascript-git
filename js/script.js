@@ -35,8 +35,10 @@ tooltip.init()
 
 numbersFetch("./numbers-api.json", ".numbers-grid")
 
+bitcoinFetch("https://blockchain.info/ticker", ".btc-price")
+
 animationScroll()
 dropdownMenu()
 menuMobile()
 openingHours()
-bitcoinFetch()
+
