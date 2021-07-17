@@ -33,7 +33,7 @@ modal.init()
 const tooltip = new Tooltip("[data-tooltip]")
 tooltip.init()
 
-numbersFetch("../../numbers-api.json", ".numbers-grid")
+numbersFetch("./numbers-api.json", ".numbers-grid")
 
 animationScroll()
 dropdownMenu()
