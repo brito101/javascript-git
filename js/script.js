@@ -3,8 +3,8 @@ import Accordion from "./modules/accordion.js"
 import TabNav from "./modules/tab-nav.js"
 import Modal from "./modules/modal.js"
 import Tooltip from "./modules/tooltip.js"
+import AnimationScroll from "./modules/animation-scroll.js"
 
-import animationScroll from "./modules/animation-scroll.js"
 import dropdownMenu from "./modules/dropdown-menu.js"
 import menuMobile from "./modules/menu-mobile.js"
 import openingHours from "./modules/opening-hours.js"
@@ -37,8 +37,9 @@ numbersFetch("./numbers-api.json", ".numbers-grid")
 
 bitcoinFetch("https://blockchain.info/ticker", ".btc-price")
 
-animationScroll()
+const animationScroll = new AnimationScroll('[data-anime="scroll"]')
+animationScroll.init()
+
 dropdownMenu()
 menuMobile()
 openingHours()
-
