@@ -1,8 +1,10 @@
+import debounce from "./debounce.js";
+
 export default class AnimationScroll {
   constructor(sections) {
     this.sections = document.querySelectorAll(sections)
     this.idealHeigth = window.innerHeight * 0.6
-    this.activeAnimation = this.activeAnimation.bind(this)
+    this.activeAnimation = debounce(this.activeAnimation.bind(this), 50)
   }
 
   getDistance() {
