@@ -4,8 +4,7 @@ import TabNav from "./modules/tab-nav.js"
 import Modal from "./modules/modal.js"
 import Tooltip from "./modules/tooltip.js"
 import AnimationScroll from "./modules/animation-scroll.js"
-
-import dropdownMenu from "./modules/dropdown-menu.js"
+import DropdownMenu from "./modules/dropdown-menu.js"
 import menuMobile from "./modules/menu-mobile.js"
 import openingHours from "./modules/opening-hours.js"
 import numbersFetch from "./modules/numbers-fetch.js"
@@ -40,6 +39,8 @@ bitcoinFetch("https://blockchain.info/ticker", ".btc-price")
 const animationScroll = new AnimationScroll('[data-anime="scroll"]')
 animationScroll.init()
 
-dropdownMenu()
+const dropdownMenu = new DropdownMenu("[data-dropdown]")
+dropdownMenu.init()
+
 menuMobile()
 openingHours()
