@@ -5,7 +5,7 @@ import Modal from "./modules/modal.js"
 import Tooltip from "./modules/tooltip.js"
 import AnimationScroll from "./modules/animation-scroll.js"
 import DropdownMenu from "./modules/dropdown-menu.js"
-import menuMobile from "./modules/menu-mobile.js"
+import MenuMobile from "./modules/menu-mobile.js"
 import openingHours from "./modules/opening-hours.js"
 import numbersFetch from "./modules/numbers-fetch.js"
 import bitcoinFetch from "./modules/bitcoin-fetch.js"
@@ -42,5 +42,7 @@ animationScroll.init()
 const dropdownMenu = new DropdownMenu("[data-dropdown]")
 dropdownMenu.init()
 
-menuMobile()
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]')
+menuMobile.init()
+
 openingHours()
