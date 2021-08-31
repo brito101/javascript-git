@@ -9,6 +9,7 @@ import MenuMobile from "./modules/menu-mobile.js"
 import openingHours from "./modules/opening-hours.js"
 import numbersFetch from "./modules/numbers-fetch.js"
 import bitcoinFetch from "./modules/bitcoin-fetch.js"
+import SlideNav from "./modules/slide.js"
 
 const smoothScroll = new SmoothScroll('[data-menu="smooth"] a[href^="#"]')
 smoothScroll.init()
@@ -46,3 +47,7 @@ const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]')
 menuMobile.init()
 
 openingHours()
+
+const slide = new SlideNav(".slide", ".slide-wrapper")
+slide.init()
+slide.addControl(".custom-controls")
